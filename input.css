@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background: var(--black); */
+  /* color: var(--pureWhite); */
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+:root {
+  --green: #01c300;
+  --black: #000000;
+  --white: color-mix(in srgb, #fff, 85%);
+  --pureWhite: #fff;
+}
+.header {
+  position: fixed;
+  display: flex;
+  background-color: var(--green);
+  width: 100%;
+  padding: 30px;
+  .logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    img {
+      width: 258px;
+      height: 145px;
+    }
+
+    .bdtc {
+      .bdctAbr {
+        text-transform: uppercase;
+        font-family: Source Sans Pro;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.165em;
+        text-align: center;
+        color: var(--pureWhite);
+      }
+      .bdtcFull {
+        font-family: Source Sans Pro;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18.86px;
+        letter-spacing: 0.165em;
+        text-align: left;
+      }
+    }
+  }
+}
