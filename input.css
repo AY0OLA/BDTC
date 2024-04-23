@@ -20,17 +20,18 @@
   background-color: var(--green);
   width: 100%;
   padding: 30px;
+}
   .logo {
     display: flex;
     align-items: center;
     text-align: center;
+  }
     img {
       width: 258px;
       height: 145px;
     }
 
-    .bdtc {
-      .bdctAbr {
+    .bdtc .bdctAbr {
         text-transform: uppercase;
         font-family: Source Sans Pro;
         font-size: 37px;
@@ -40,14 +41,11 @@
         text-align: center;
         color: var(--pureWhite);
       }
-      .bdtcFull {
+     .bdtc .bdtcFull {
         font-family: Source Sans Pro;
         font-size: 15px;
         font-weight: 700;
         line-height: 18.86px;
         letter-spacing: 0.165em;
         text-align: left;
-      }
-    }
-  }
-}
+      }  
