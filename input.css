@@ -1,51 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  /* background: var(--black); */
-  /* color: var(--pureWhite); */
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
+  list-style: none;
+  text-decoration: none;
+  max-width: 100%;
+  transition: 0.75s;
 }
+
+
 :root {
   --green: #01c300;
   --black: #000000;
   --white: color-mix(in srgb, #fff, 85%);
   --pureWhite: #fff;
+  --font-family: "source sans 3"
 }
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  max-width: 100%;
+  min-width: 320px;
+  width: 100%;
+}
+
 .header {
   position: fixed;
   display: flex;
   background-color: var(--green);
   width: 100%;
-  padding: 30px;
+  padding: 20px 20px;
 }
-  .logo {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-    img {
-      width: 258px;
-      height: 145px;
-    }
 
-    .bdtc .bdctAbr {
-        text-transform: uppercase;
-        font-family: Source Sans Pro;
-        font-size: 37px;
-        font-weight: 700;
-        line-height: 20px;
-        letter-spacing: 0.165em;
-        text-align: center;
-        color: var(--pureWhite);
-      }
-     .bdtc .bdtcFull {
-        font-family: Source Sans Pro;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 18.86px;
-        letter-spacing: 0.165em;
-        text-align: left;
-      }  
+.logo {
+  display: flex;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+.logo img {
+  width: 100%;
+  height: 10vh;
+  /* padding: -10px 10px; */
+  margin-top: -5px;
+}
+
+.bdtc .bdctAbr {
+  /* text-transform: uppercase; */
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 20px;
+ margin-top: 12px;
+  padding-left: 10px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: var(--pureWhite);
+}
+
+
+.bdtc .bdtcFull {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  margin-top: 15px;
+  padding-left: 5px;
+}
+
+.logo ul {
+  display: flex;
+  padding-top: 20px; 
+  padding-left: 20px;
+}
+
+.logo li a{
+  color: var(--pureWhite);
+  font-weight: 700;
+  font-family: var(--font-family);
+  font-size: 20px;
+  padding: 20px;
+  letter-spacing: 0.165em;
+}
