@@ -15,6 +15,7 @@
   --green: #01c300;
   --black: #000000;
   --white: color-mix(in srgb, #fff, 85%);
+  --gray: #545454;
   --pureWhite: #fff;
   --font-family: "source sans 3"
 }
@@ -39,6 +40,7 @@ div.header {
 
 div.logo {
   display: flex;
+  /* flex-wrap: wrap; */
   /* justify-content: center; */
 }
 
@@ -89,24 +91,39 @@ div.logo li a {
 }
 
 div.logo li a:hover {
-  color: var(--black);
+  color: var(--gray);
 }
 
 /* Book Now */
+div.link1{
+  margin-top: 20px;
+}
+
 label {
-  padding: 3px 25px;
-  /* margin-left: 270px; */
-  margin-top: 22px;
+  padding: 15px 5px;
+  margin-left: 350px;
   background-color: var(--black);
-  border-radius: 14px;
+  border-radius: 40px;
+}
+
+label:hover{
+  background-color: var(--pureWhite);
 }
 
 label.nav-link a {
   color: var(--pureWhite);
   margin: 20px 10px;
   text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: var(--font-family);
+  letter-spacing: 0.167em;
 }
 
 label.nav-link a:hover{
-  color: var(--green);
+  color: var(--gray);
+}
+
+#icon{
+  display: none;
 }
