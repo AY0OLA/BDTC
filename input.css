@@ -95,7 +95,11 @@ div.logo li a:hover {
 }
 
 /* Book Now */
-div.link1{
+label.nav-link2{
+display: none;
+}
+
+div.link1 {
   margin-top: 20px;
 }
 
@@ -106,7 +110,7 @@ label {
   border-radius: 40px;
 }
 
-label:hover{
+label:hover {
   background-color: var(--pureWhite);
 }
 
@@ -120,10 +124,23 @@ label.nav-link a {
   letter-spacing: 0.167em;
 }
 
-label.nav-link a:hover{
+label.nav-link a:hover {
   color: var(--gray);
 }
 
-#icon{
+#icon {
+  color: var(--pureWhite);
+  /* line-height: 80px; */
+  cursor: pointer;
   display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--pureWhiter);
 }
