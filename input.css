@@ -98,8 +98,9 @@ label.nav-link2 {
 
 label.nav-link {
   padding: 15px 5px;
-  margin-left: 200px;
-  /* margin-bottom: 200PX; */
+  margin-left: 300px;
+  margin-top: 10px;
+  height: 25px;
   background-color: var(--black);
   border-radius: 40px;
 }
@@ -110,7 +111,7 @@ label.nav-link:hover {
 
 label.nav-link a {
   color: var(--pureWhite);
-  margin: 20px 10px;
+  padding: 20px 10px;
   /* text-align: center; */
   font-size: 17px;
   font-weight: 700;
@@ -124,7 +125,7 @@ label.nav-link a:hover {
 
 #icon {
   color: var(--pureWhite);
-  /* line-height: 80px; */
+  margin-left: 550px;
   cursor: pointer;
   display: none;
 }
